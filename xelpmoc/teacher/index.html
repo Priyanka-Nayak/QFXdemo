@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+  
+  
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+      <div class="nav__cont">
+       
+        
+        <ul class="nav">
+          <li class="nav__items "><a href="#"><img src="logo.png" id="logod"><b>QFX</b></a></li>
+
+            
+
+            <li class="nav__items "><a href="#"><i class="fa fa-calendar fa-fw"></i>SCHEDULE</a></li>
+            <li class="nav__items "><a href="#"><i class="fa fa-file fa-fw" ></i>ASSESSMENTS</a></li>
+            <li class="nav__items "><a href="#"><i class="fa fa-university fa-fw" ></i>RESOURCES</a></li>
+            <li class="nav__items "><a href="#"><i class="fa fa-graduation-cap fa-fw"></i>PERFORMANCE</a></li>
+            <li class="nav__items "><a href="#"><i class="fa fa-users fa-fw"></i>CHAT ROOM</a></li>
+            <li class="nav__items "><a href="#"><i class="fa fa-question-circle fa-fw"></i>FAQ</a></li>
+            <li class="nav__items"><a href="#"><i class="fa fa-power-off fa-fw"></i>LOG OUT</a></li> 
+          </ul>
+    </div>
+    
+    <div class="main_content">
+        <div class="header">
+          <div id="clock"></div>
+
+  <script  src="./script.js"></script>
+                <span class="details">
+                  <p>Good evening, Anita Kishore</p>
+                  </span>
+                  <span id="gdavatar"><img id="avatarimg" src="avatar.png"></span>
+          </div>
+    </div>
+</div>
+
+<div class="dropdown">
+
+  
+
+
+      <label class="collection">
+          <input type="checkbox" onclick="myDrop()" class="dropbtn">
+          <div>
+              <span></span>
+          </div>
+      </label>
+
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">CREATE A NEW QUIZ</a>
+    <a href="#">CREATE A NEW CLASS ASSIGNMENT</a>
+    <a href="#">CREATE A NEW UNIT TEST</a>
+    <a href="#">CREATE A NEW PRACTICAL MCQ TEST</a>
+  </div>
+</div>
+
+<script>
+
+function myDrop() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+</script>
+
+<h2>ASSESSMENTS</h2>
+<div class="container" >
+  <a class="card1" href="#">
+    <b>29</b>
+    <p class="small">NEEDS EVALUATION</p>
+  </a>
+
+<a class="card2" href="#">
+    <b>15</b>
+    <p class="small">EVALUATED</p>
+  </a>
+
+<a class="card3" href="#">
+    <b>62</b>
+    <p class="small">TOTAL TESTS CREATED</p>
+  </a>
+
+<a class="card4" href="#">
+    <b>31</b>
+    <p class="small">QUIZZES CREATED</p>
+  </a>
+
+</div>
+
+<h4>SUBMISSION STATUS</h4>
+
+<div id="table1">
+  <div class="head">
+
+    <input type="text" id="category"  name="product" list="productName" placeholder="Choose category"/>
+    <datalist id="productName">
+        <option value="Pen">Pen</option>
+        <option value="Pencil">Pencil</option>
+        <option value="Paper">Paper</option>
+    </datalist>
+
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by student name" title="Type in a name">
+
+</div>
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:0%;"></th>
+    <th style="width:10%;">QFX ID</th>
+    <th style="width:20%;">NAME</th>
+    <th style="width:20%;">CLASS/SEC</th>
+    <th style="width:20%;">TYPE</th>
+    <th style="width:40%;">STATUS</th>
+    
+  </tr>
+
+ 
+      <tr>
+        <td><img src="a1.png" id="image" ></td>
+        <td>5671</td>
+        <td>Akaash B</td>
+        <td>3 B</td>
+        <td>QUIZ</td>
+        <td>
+          <div id="myProgress">
+          <div id="myBar">52%</div>
+          </div>
+      </td>
+      </tr>
+      <tr>
+        <td ><img src="a2.png" id="image"></td>
+        <td>5671</td>
+        <td>Alfreds</td>
+        <td>3 B</td>
+        <td>ASSIGNMENT</td>
+        <td>
+          <div id="myProgress1">
+          <div id="myBar1">100%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="a3.png" id="image"></td>
+        <td>5671</td>
+        <td>Berglunds</td>
+        <td>3 B</td>
+        <td>QUIZ</td>
+        <td>
+          <div id="myProgress2">
+          <div id="myBar2">0%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="a1.png" id="image"></td>
+        <td>5671</td>
+        <td>North</td>
+        <td>3 B</td>
+        <td>QUIZ</td>
+        <td>
+           <div id="myProgress">
+          <div id="myBar">52%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="a2.png" id="image"></td>
+        <td>5671</td>
+        <td>Priya</td>
+        <td>3 B</td>
+        <td>ASSIGNMENT</td>
+        <td>
+           <div id="myProgress">
+          <div id="myBar">52%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="a3.png" id="image"></td>
+        <td>5671</td>
+        <td>Rekha</td>
+        <td>3 B</td>
+        <td>QUIZ</td>
+        <td>
+          <div id="myProgress1">
+          <div id="myBar1">100%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="a1.png" id="image"></td>
+        <td>5671</td>
+        <td>Alia</td>
+        <td>3 B</td>
+        <td>QUIZ</td>
+        <td>
+          <div id="myProgress1">
+          <div id="myBar1">100%</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="a1.png" id="image"></td>
+        <td>5671</td>
+        <td>Jane</td>
+        <td>3 B</td>
+        <td>ASSIGNMENT</td>
+        <td>
+          <div id="myProgress2">
+          <div id="myBar2">0%</div>
+          </div>
+        </td>
+      </tr>
+
+</table>
+
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td") ; 
+    for(j=0 ; j<td.length ; j++)
+    {
+      let tdata = td[j] ;
+      if (tdata) {
+        if (tdata.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          break ; 
+        } else {
+          tr[i].style.display = "none";
+        }
+      } 
+    }
+  }
+}
+</script>
+
+
+</body>
+</html>
